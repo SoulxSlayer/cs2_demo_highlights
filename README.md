@@ -2,8 +2,12 @@
 
 > [!IMPORTANT]  
 > Use borderless fullscreen in CS2 for the app to work.
+> 
 > This app only works on Windows!
+> 
 > Make sure to properly set up OBS.
+>
+> You currently can't make videos of players with Unicode symbols in their names.
 
 ## Installation
 
