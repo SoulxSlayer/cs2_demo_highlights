@@ -28,6 +28,15 @@
 4. go through the prompts
 5. wait for cs2 to launch and don't touch anything until the process is finished (disconnects from the demo player)
 
+## Credits
+This code uses the following libraries:
+- [PyGetWindow](https://github.com/asweigart/PyGetWindow)
+- [PyAutoGUI](https://github.com/asweigart/pyautogui)
+- [pick](https://github.com/aisk/pick)
+- [obs-websocket-py](https://github.com/Elektordi/obs-websocket-py)
+- [moviepy](https://github.com/Zulko/moviepy)
+- [demoparser2](github.com/LaihoE/demoparser)
+
 ## Contributing
 
 i'm aware that this code is garbage, so feel free to fork this repo and do some changes and send a pull request back.
