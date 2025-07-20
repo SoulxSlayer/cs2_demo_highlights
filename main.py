@@ -10,6 +10,7 @@ import util
 from demoparser2 import DemoParser
 import config
 from moviepy import *
+import uuid
 
 ows_client = obsws(config.obs_ws_host, config.obs_ws_port, config.obs_ws_password)
 ows_client.connect()
@@ -149,7 +150,8 @@ for file in sorted(os.listdir(folder)):
         clips.append(clip)
 
 final_clip = concatenate_videoclips(clips)
-final_clip.write_videofile(os.path.join(os.environ["USERPROFILE"], "Videos", f"cs2_demo_highlights - {selected_player_name} - {len(deaths)} kills.mp4"), fps=120)
+random_str = str(uuid.uuid4())[:8]
+final_clip.write_videofile(os.path.join(os.environ["USERPROFILE"], "Videos", f"cs2_demo_highlights - {selected_player_name} - {len(deaths)} kills - {random_str}.mp4"), fps=120)
 
 # cleanup
 for clip in clips:
